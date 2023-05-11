@@ -1,0 +1,236 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.wrapper_full{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+/* Start header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 7;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.other_header{
+    background-color: rgb(109,54,45);
+    padding: 10px 0;
+}
+
+.other_header_item{
+    color: white;
+}
+
+.other_header_item{
+    margin-right: 225px;
+}
+
+.other_header_item:last-child{
+    margin-right: 0;
+}
+
+.header_logo-link{
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(109,54,45);
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item{
+    margin-right: 60px;
+}
+
+.header_item:last-child{
+    margin-right: 0;
+}
+
+.header_link{
+    font-size: 15px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+
+.header_booking-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(109,54,45);
+}
+
+/* End header */
+
+/* Add padding to containers */
+.container {
+    margin-top: 100px;
+    padding: 16px;
+    background-color: white;
+}
+
+.title{
+    color: rgb(109,54,45);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: rgb(109,54,45);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/* Footer start */
+
+.footer{
+    background-color:rgba(109,54,45);
+}
+
+.footer_title{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 30px;
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer_item{
+    margin-right: 60px;
+}
+
+.footer_item:last-child{
+    margin-right: 0;
+}
+
+.footer_link{
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_link:hover, .footer_link:focus, .footer_link:active{
+    opacity: .75;
+}
+
+.footer_end{
+    margin-bottom: 50px;
+}
+
+.footer_name{
+    text-align: center;
+    color: white;
+}
+
+.footer_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.footer_img{
+    width: 50px;
+}
+
+.footer_pic{
+    margin-right: 50px;
+}
+
+.footer_pic:last-child{
+    margin-right: 0;
+}
+
+  /* Footer end */

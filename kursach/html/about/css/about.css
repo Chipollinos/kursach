@@ -1,0 +1,391 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.wrapper_full{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+/* Start header */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.other_header{
+    background-color: rgb(109,54,45);
+    padding: 10px 0;
+}
+
+.other_header_item{
+    color: white;
+}
+
+.other_header_item{
+    margin-right: 225px;
+}
+
+.other_header_item:last-child{
+    margin-right: 0;
+}
+
+.header_logo-link{
+    text-decoration: none;
+    font-size: 36px;
+    color: rgb(109,54,45);
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_item{
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+.header_item:last-child{
+    margin-right: 0;
+}
+
+button{
+    width: 100%;
+    background-color: #FDF5E6;
+}
+
+.header_link{
+    font-size: 15px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+
+.header_booking-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(109,54,45);
+}
+
+.header_booking-link:focus, .header_booking-link:hover, .header_booking-link:active{
+    opacity: .75;
+    cursor: pointer;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    color: white;
+    width: auto;
+    padding: 10px 18px;
+    background-color: rgb(109,54,45);
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    /* background-color: #fefefe; */
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(109,54,45);
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* End header */
+
+/* About_img start */
+
+.about_img{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.lg_img{
+    width: 100%;
+}
+
+.sm_img{
+    justify-content: space-around;
+    width: 417px;
+    height: 250px;
+    margin-bottom: 5px;
+}
+
+/* About_img end */
+
+/* Information start */
+
+.main_text{
+    max-width: 800px;
+}
+
+.information_title{
+    font-size: 26px;
+    font-weight: 100;
+    color: rgb(109,54,45);
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.information_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information_cards{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.information_card{
+    position: relative;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.information_card::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.information_card_size{
+    grid-row: span 1;
+}
+
+.information_card_title{
+    font-size: 30px;
+    line-height: 60px;
+    color: #fff;
+    position: absolute;
+    bottom: 190px;
+    left: 80px;
+    z-index: 3;
+    background-color: gray;
+    opacity: 0.8;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.information_card_pic{
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.information_card:hover .information_card_pic{
+    transform: scale(1.05);
+}
+
+.information_card_link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+/* information end */
+
+/* Footer start */
+
+.footer{
+    background-color:rgba(109,54,45);
+}
+
+.footer_title{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 30px;
+}
+
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer_item{
+    margin-right: 60px;
+}
+
+.footer_item:last-child{
+    margin-right: 0;
+}
+
+.footer_link{
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_link:hover, .footer_link:focus, .footer_link:active{
+    opacity: .75;
+}
+
+.footer_end{
+    margin-bottom: 50px;
+}
+
+.footer_name{
+    text-align: center;
+    color: white;
+}
+
+.footer_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.footer_img{
+    width: 50px;
+}
+
+.footer_pic{
+    margin-right: 50px;
+}
+
+.footer_pic:last-child{
+    margin-right: 0;
+}
+
+  /* Footer end */
